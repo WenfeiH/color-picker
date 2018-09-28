@@ -24,66 +24,68 @@ class Pick extends Component {
     };
     return (
       <div style={styletext} className="outer">
-        <div className="adder" />
-        <div className="container">
-          <div>
-            <p>
-              Red:
-              {this.state.red}
-            </p>
-            <input
-              type="range"
-              min="0"
-              max="255"
-              name="red"
-              value={this.state.red}
-              onChange={this.handleChange}
-            />
-          </div>
+        <div className="inner">
+          <div className="container">
+            <div style={styletext} className="ii" />
+            <div>
+              <p>
+                Red:
+                {this.state.red}
+              </p>
+              <input
+                type="range"
+                min="0"
+                max="255"
+                name="red"
+                value={this.state.red}
+                onChange={this.handleChange}
+              />
+            </div>
 
-          <div>
-            <p>
-              Green:
-              {this.state.green}
-            </p>
-            <input
-              type="range"
-              min="0"
-              max="255"
-              name="green"
-              value={this.state.green}
-              onChange={this.handleChange}
-            />
-          </div>
+            <div>
+              <p>
+                Green:
+                {this.state.green}
+              </p>
+              <input
+                type="range"
+                min="0"
+                max="255"
+                name="green"
+                value={this.state.green}
+                onChange={this.handleChange}
+              />
+            </div>
 
-          <div>
-            <p>
-              Blue:
-              {this.state.blue}
-            </p>
-            <input
-              type="range"
-              min="0"
-              max="255"
-              name="blue"
-              value={this.state.blue}
-              onChange={this.handleChange}
-            />
-          </div>
-          <div>
-            <p>
-              Alpha:
-              {this.state.alpha}
-            </p>
-            <input
-              type="range"
-              min="0"
-              max="1"
-              name="alpha"
-              value={this.state.alpha}
-              onChange={this.handleChange}
-              step="0.01"
-            />
+            <div>
+              <p>
+                Blue:
+                {this.state.blue}
+              </p>
+              <input
+                type="range"
+                min="0"
+                max="255"
+                name="blue"
+                value={this.state.blue}
+                onChange={this.handleChange}
+              />
+            </div>
+            <div>
+              <p>
+                Alpha:
+                {this.state.alpha}
+              </p>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                name="alpha"
+                value={this.state.alpha}
+                onChange={this.handleChange}
+                step="0.01"
+              />
+            </div>
           </div>
         </div>
       </div>
